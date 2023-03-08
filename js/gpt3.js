@@ -5,10 +5,10 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const response = await openai.createCompletion("text-davinci-003", {
+const response = await openai.createCompletion("gpt-3.5-turbo", {
     prompt: "Write a blog post on vadala onions",
     temperature: 0.7,
-    max_tokens: 256,
+    max_tokens: 1024,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0,
