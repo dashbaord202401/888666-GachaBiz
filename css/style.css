@@ -25,11 +25,11 @@ p {
 
 .glass {
     border-radius: 25px;
-    opacity: 0.4;
+    opacity: 0.9;
     -webkit-filter: blur(1px);
     border: #363333 1px solid;
     border-radius: 25px;
-    background-color: #ffffff69;
+    background-color: #ffffff2d;
 
 }
 
@@ -96,29 +96,21 @@ p {
     height: 100%;
 }
 
-.square-buy-div {
-    position: absolute;
-    top: 45%;
-    left: 26%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 259px;
-    font-family: Rubik, SQ Market, Helvetica, Arial, sans-serif;
-}
-
 .square-buy-button {
+    position: absolute;
+    text-decoration: none;
     display: inline-block;
     font-size: 18px;
     line-height: 48px;
+    top: 48%;
+    left: 28%;
     height: 48px;
     color: #000000;
     min-width: 212px;
-    background-color: #44e4d483;
+    /* background-color: #44e4d483; */
+    background-color: #f7e0cb;
     text-align: center;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
-    border-radius: 50px;
+    border-radius: 10px;
   
 }
