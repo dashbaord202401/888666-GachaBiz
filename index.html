@@ -2,72 +2,47 @@
 <html>
 
 <head>
-  <title>GachaBiz</title>
-  <link rel="stylesheet" href="/css/style.css">
+    <title>GachaBiz</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div class="glass banner shadow"></div>
-  <button>
-    <!-- TODO : add href to another page with explanations and stuff -->
-    <!-- TODO : add the Info button -->
-  </button>
-  <button class="shadow">
-    <a href="http://twitter.com/intent/tweet?text=Hey!%0AI%20just%20tested%20this%20online%20tool%20that%20lets%20you%20generate%20cool%20business%20ideas,%20test%20it%20out%20at%20gachabiz.com%20!%0A%2F&via=gachabiz
-    " target="_blank">
-      <img src="/assets/twitter.png" alt="twitter logo" class="twitter-logo">
+    <div class="glass banner shadow"></div>
+
+
+
+    <!-- <button> -->
+        <!-- TODO : add href to another page with explanations and stuff -->
+        <!-- TODO : add the Info button -->
+    <!-- </button> -->
+
+
+
+    <a href="http://twitter.com/intent/tweet?text=Hey!%0AI%20just%20tested%20this%20online%20tool%20that%20lets%20you%20generate%20cool%20business%20ideas,%20check%20it%20out%20at%20gachabiz.com%20!%0A%2F&via=gachabiz" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/twitter.png" alt="Twitter logo" class="twitter-logo">
     </a>
-  </button>
-  <div class=" glass buy shadow">
-    <div></div class="shadow glass inside">
-  </div>
-  <h1 class="buyH1">GachaBiz</h1>
-  <h2 class="buyH2">Gotcha' biz !</h2>
+    
+    <div class=" glass buy shadow">
+        <div></div class="shadow glass inside">
+    </div>
+    <h1 class="buyH1 gachabiz-text-gradient">GachaBiz</h1>
+    <!-- <h2 class="buyH2">Gotcha' biz !</h2> -->
 
-<!-- TODO : remove the small portion of button that seems to be sitting at the top left corner of the website -->
-    <button class="shadow">
-      <a target="_blank" data-url="https://square.link/u/rQIVOaMK?src=embd"
-        href="https://square.link/u/rQIVOaMK?src=embed" class="square-buy-button">Insert Coin</a>
-    </button>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 
-  <div class="glass generation shadow"></div>
-  <script>
-    function showCheckoutWindow(e) {
-      e.preventDefault();
 
-      const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
-      const title = 'Gachabiz Online Checkout';
+    <a id="checkout-button" target="_blank" data-url="https://square.link/u/rQIVOaMK?src=embd" href="https://square.link/u/rQIVOaMK?src=embed">
+        <button class="bn632-hover bn24 square-buy-button">
+            <span>Insert Coin</span>
+        </button>
+        <script src="js/squareBuy.js"></script>
+    </a>
 
-      // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
-      const topWindow = window.top ? window.top : window;
-
-      // Fixes dual-screen position                                Most browsers          Firefox
-      const dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX;
-      const dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : topWindow.screenY;
-
-      const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-      const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-
-      const h = height * .75;
-      const w = 500;
-
-      const systemZoom = width / topWindow.screen.availWidth;
-      const left = (width - w) / 2 / systemZoom + dualScreenLeft;
-      const top = (height - h) / 2 / systemZoom + dualScreenTop;
-      const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
-
-      if (window.focus) newWindow.focus();
-      <!-- TODO : find a way to trigger the function that generates the business idea -->
-    }
-
-    // This overrides the default checkout button click handler to show the embed modal
-    // instead of opening a new tab with the given link url
-    document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
-      showCheckoutWindow(e);
-    });
-  </script>
-  </div>
+    <!-- TODO : remove the small portion of button that seems to be sitting at the top left corner of the website -->
+    <div class="glass generation shadow"></div>
 </body>
 
 </html>
+
+
+
+<!-- ------------------------------- -->
