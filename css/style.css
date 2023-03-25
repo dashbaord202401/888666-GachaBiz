@@ -30,7 +30,7 @@ p {
     -webkit-filter: blur(1px);
     /* border: #363333 1px solid; */
     border: #333232 1px solid;
-    
+
     border-radius: 25px;
     background-color: #0000007a;
 
@@ -86,12 +86,30 @@ p {
     box-shadow: -20px 11px 19px -4px rgba(0, 0, 0, 0.2);
 }
 
-.twitter-logo {
+.links {
     position: absolute;
-    top: 6%;
-    left: 85%;
-    width: 56px;
-    height: 45px;
+    top: 3%;
+    right: 10%;
+    height: 10%;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.twitter-logo,
+.info-logo {
+    display: inline-block;
+    height: 100%;
+    object-fit: contain;
+}
+
+.twitter-logo {
+    width: 40%;
+}
+
+.info-logo {
+    width: 35%;
 }
 
 .inside {
@@ -112,6 +130,20 @@ p {
     background: -webkit-linear-gradient(45deg, #16a1bd, #28E9D6, #E965BB, #FCE1B8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.info-card {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    background-color: #0000007a;
+    border-radius: 25px;
+    opacity: 0.9;
+    -webkit-filter: blur(1px);
+    border: #363333 1px solid;
+    border: #333232 1px solid;
 }
 
 /* ---------------- */
